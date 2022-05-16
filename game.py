@@ -46,3 +46,25 @@ class Game:
                             if x["id"] == next_question_id:
                                 next_question = x["question"]
                                 self.context.show_question(next_question)
+
+
+    class AnswerNo:
+        def __init__(self, context: GameContext):
+            self.context = context
+
+        def answer_no(self, question):
+            """It's called when a user answers NO to a question.
+        Handles the transition to the next question or exits the game.
+        """
+        # self.context.end_game()
+
+            for x in self.context.questions:
+                if x["question"] == question:
+                    next_question_id = int(x["no"])
+                    if next_question_id == 0:
+                        self.context.end_game()
+                    else:
+                        for x in self.context.questions:
+                            if x["id"] == next_question_id:
+                                next_question = x["question"]
+                                self.context.show_question(next_question)
