@@ -19,6 +19,11 @@ class Context(GameContext):
         else:
             print("Unknown input " + answer)
 
+    def end_game(self):
+        """Exits the game."""
+        print("Ending game...")
+        pass
+
 
 def main():
     context = Context()
