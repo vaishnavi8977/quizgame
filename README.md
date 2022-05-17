@@ -44,3 +44,5 @@ Simply add a dictionary to the list of dictionaries, which contains  question id
 
 How easy is it to add additional information about a question, for example, a picture?
 If in case of adding additional information like picture just add another key to the dictionary. Make it to display in show_question() method.
+![image](https://user-images.githubusercontent.com/78514619/168707596-c705cca6-f390-4a21-ab5b-fc64a6ee80c4.png)
+
